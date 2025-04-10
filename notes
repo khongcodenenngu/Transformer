@@ -1,0 +1,7 @@
+- When multiply 2 high-dimension matrices, only need to pay attention to the 2 last dimension
+- contiguous in Python: -> advantageous
+- post-norm (original Trans) VS pre-norm (+a final norm)
+    + original trans: no final norm :real?
+- in decoder/encoder, we have to use different dropout in different processes(not 1 for all)
+- for speed up training, you may use mps device (on mac) by init device -> mps and move all necessary things to device
+- in test.py, maybe add beam_search_decode for comparing the results returned by 2 approaches (use 100 pairs...)
